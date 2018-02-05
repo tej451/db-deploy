@@ -1,7 +1,7 @@
 
 plugins {
     id "java"
-    id "org.flywaydb.flyway" version "4.2.0"
+    id "org.flywaydb.flyway" version "5.0.7"
 }
 
 repositories {
@@ -17,12 +17,15 @@ dependencies {
 
 
 flyway {
+
     url = 'jdbc:oracle:thin:@//localhost:1521/xe'
     driver = 'oracle.jdbc.driver.OracleDriver'
     user = 'system'
     password = 'oracle'
     table = 'schema_version'
     baselineOnMigrate=true
+    sqlMigrationSuffixes = ['.sql', '.pkg', '.pkb', '.pks']
+    
 }
 
 

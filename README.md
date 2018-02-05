@@ -9,3 +9,7 @@ https://github.com/flyway/flyway/issues/782
 
 Reference:
 http://www.dennis-stepp.com/post/flywaygradle/
+
+
+sample configurations:
+https://flywaydb.org/documentation/gradle/undo
