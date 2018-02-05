@@ -20,7 +20,7 @@ flyway {
     url = 'jdbc:oracle:thin:@//localhost:1521/xe'
     driver = 'oracle.jdbc.driver.OracleDriver'
     user = 'system'
-    password = 'orcl'
+    password = 'oracle'
     table = 'schema_version'
     baselineOnMigrate=true
 }
