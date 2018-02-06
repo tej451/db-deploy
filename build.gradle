@@ -22,8 +22,11 @@ flyway {
     driver = 'oracle.jdbc.driver.OracleDriver'
     user = 'system'
     password = 'oracle'
+    locations = ['filesystem:src/main/resources/db/migration','filesystem:src/main/resources/sql-migrations']
     table = 'schema_version'
     baselineOnMigrate=true
+    baselineVersion = 1
+    baselineDescription = "Let's go!"
     sqlMigrationSuffixes = ['.sql', '.pkg', '.pkb', '.pks']
     
 }
