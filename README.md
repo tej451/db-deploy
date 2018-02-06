@@ -13,3 +13,5 @@ http://www.dennis-stepp.com/post/flywaygradle/
 
 sample configurations:
 https://flywaydb.org/documentation/gradle/undo
+
+test
